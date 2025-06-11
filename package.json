@@ -1,0 +1,25 @@
+{
+  "name": "my_daily",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "lemonshuo",
+    "email": "lemonshuo@126.com",
+    "url": "https://github.com/plutodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plutodemon/my_daily.git"
+  },
+  "devDependencies": {
+    "flexsearch": "^0.7.43",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-search": "^1.0.4-alpha.22"
+  },
+  "scripts": {
+    "dev": "vitepress dev --port 7073",
+    "build": "vitepress build --port 7073",
+    "preview": "vitepress preview --port 7073"
+  }
+}
