@@ -4,10 +4,10 @@ export default defineConfig({
     title: "My Daily",
     srcDir: './src',
     metaChunk: true,
-    head:[['link', { rel: 'icon', href: 'img/柠檬.svg' }]],
+    head:[['link', { rel: 'icon', href: 'img/lemon_logo.svg' }]],
 
     themeConfig: {
-        logo: 'img/柠檬.svg',
+        logo: 'img/lemon_logo.svg',
 
         socialLinks: [
             {icon: 'github', link: 'https://github.com/plutodemon'}
@@ -62,6 +62,8 @@ export default defineConfig({
                         {text: 'Git', link: '/skillOrTool/Git'},
                         {text: 'Rpc', link: '/skillOrTool/Rpc'},
                         {text: 'VitePress', link: '/skillOrTool/VitePress'},
+                        {text: 'Linux', link: '/skillOrTool/Linux'},
+                        {text: 'Nginx', link: '/skillOrTool/Nginx'},
                     ]
                 }
             ],
