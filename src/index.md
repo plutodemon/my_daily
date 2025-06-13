@@ -7,11 +7,11 @@ hero:
   tagline: 一锅大杂烩
   actions:
     - theme: brand
-      text: Soft Install
-      link: /softInstall
-    - theme: alt
       text: Skill Tool
       link: /skillOrTool
+    - theme: alt
+      text: Soft Install
+      link: /softInstall
     - theme: alt
       text: Examples
       link: /examples/markdown-examples
