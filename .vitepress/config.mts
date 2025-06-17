@@ -64,6 +64,7 @@ export default defineConfig({
                         {text: 'VitePress', link: '/skillOrTool/VitePress'},
                         {text: 'Linux', link: '/skillOrTool/Linux'},
                         {text: 'Nginx', link: '/skillOrTool/Nginx'},
+                        {text: 'Docker', link: '/skillOrTool/Docker'},
                     ]
                 }
             ],
