@@ -4,7 +4,7 @@ export default defineConfig({
     title: "My Daily",
     srcDir: './src',
     metaChunk: true,
-    head:[['link', { rel: 'icon', href: 'img/lemon_logo.svg' }]],
+    head: [['link', {rel: 'icon', href: 'img/lemon_logo.svg'}]],
 
     themeConfig: {
         logo: 'img/lemon_logo.svg',
@@ -59,12 +59,13 @@ export default defineConfig({
                     text: 'Skill Tool',
                     items: [
                         {text: 'skill', link: '/skillOrTool/'},
+                        {text: 'Linux', link: '/skillOrTool/Linux'},
                         {text: 'Git', link: '/skillOrTool/Git'},
                         {text: 'Rpc', link: '/skillOrTool/Rpc'},
-                        {text: 'VitePress', link: '/skillOrTool/VitePress'},
-                        {text: 'Linux', link: '/skillOrTool/Linux'},
                         {text: 'Nginx', link: '/skillOrTool/Nginx'},
                         {text: 'Docker', link: '/skillOrTool/Docker'},
+                        {text: 'VitePress', link: '/skillOrTool/VitePress'},
+                        {text: 'RustDesk', link: '/skillOrTool/RustDesk'},
                     ]
                 }
             ],
