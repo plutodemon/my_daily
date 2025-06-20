@@ -62,6 +62,7 @@ export default defineConfig({
                         {text: 'Linux', link: '/skillOrTool/Linux'},
                         {text: 'Git', link: '/skillOrTool/Git'},
                         {text: 'Rpc', link: '/skillOrTool/Rpc'},
+                        {text: 'Flutter', link: '/skillOrTool/Flutter'},
                         {text: 'Nginx', link: '/skillOrTool/Nginx'},
                         {text: 'Docker', link: '/skillOrTool/Docker'},
                         {text: 'VitePress', link: '/skillOrTool/VitePress'},
