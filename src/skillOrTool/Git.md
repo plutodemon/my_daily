@@ -4,6 +4,29 @@ outline: deep
 
 # Git
 
+## 常用命令
+
+- 打tag
+  ```bash
+  git tag -a v1.0 -m "版本1.0" dad0b0c
+  ```
+- 推送tag
+  ```bash
+  git push origin v1.0
+  ```
+- 推送所有tag
+  ```bash
+  git push origin --tags
+  ```
+- 删除tag
+  ```bash
+  git tag -d v1.0
+  ```
+- 查看tag
+  ```bash
+  git tag -l
+  ```
+
 ## 推送远程仓库
 
 - 远程创建好仓库 本地 `git clone`
