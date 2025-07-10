@@ -1,3 +1,6 @@
+#### 完整配置
+
+```nginx
 server {
     listen 80;
     server_name lemonshuo.cn www.lemonshuo.cn;
@@ -17,6 +20,8 @@ server {
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_prefer_server_ciphers on;
 
+    # 这个root可能要放到外面
+    # root /var/www/vitepress/dist; 
     location / {
         root /var/www/vitepress/dist;
         index index.html;
@@ -31,20 +36,23 @@ server {
     #     proxy_set_header X-Forwarded-Proto $scheme;
     # }
 }
+```
 
-# 默认配置
+#### 默认配置
 
+```nginx
 server {
-        listen 7073;
-        listen [::]:7073;
+    listen 7073;
+    listen [::]:7073;
 
-        root /var/www/vitepress/dist;
+    root /var/www/vitepress/dist;
 
-        index index.html;
+    index index.html;
 
-        server_name _;
+    server_name _;
 
-        location / {
-                try_files $uri $uri/ /index.html;
-        }
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
 }
+```

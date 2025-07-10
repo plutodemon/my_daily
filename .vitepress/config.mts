@@ -9,6 +9,12 @@ export default defineConfig({
     themeConfig: {
         logo: 'img/lemon_logo.svg',
 
+        footer: {
+            copyright: '基于 <a href="https://github.com/plutodemon/my_daily/blob/master/LICENSE">MIT</a> 许可发布<br/>' +
+                '版权所有 © 2025 <a href="https://github.com/plutodemon">lemonshuo</a>',
+            message: '备案号 <a href="https://beian.miit.gov.cn/">1111111111</a>'
+        },
+
         socialLinks: [
             {icon: 'github', link: 'https://github.com/plutodemon'}
         ],

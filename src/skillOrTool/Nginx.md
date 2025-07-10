@@ -64,24 +64,9 @@ nginx -T
 
 修改默认配置 `/etc/nginx/sites-available/default` 文件
 
-```nginx
-server {
-        listen 7073;
-        listen [::]:7073;
+<!--@include: server_cfg.md{41,}-->
 
-        root /var/www/vitepress/dist;
-
-        index index.html;
-
-        server_name _;
-
-        location / {
-                try_files $uri $uri/ /index.html;
-        }
-}
-```
-
-## 配置HTTPS
+## 配置SSL
 
 ### 自动化配置
 
@@ -91,27 +76,6 @@ server {
 
 1. 申请SSL证书
 2. 将证书文件放在服务器上，例如 `/etc/nginx/certs/your_domain.crt` 和 `/etc/nginx/private/your_domain.key`
-3. 修改Nginx配置文件 `/etc/nginx/sites-available/default`：
+3. 修改Nginx配置文件 `/etc/nginx/sites-available/default`
 
-```nginx
-server {
-    listen 443 ssl;
-    listen [::]:443 ssl;
-
-    server_name your_domain.com;
-
-    ssl_certificate /etc/nginx/certs/your_domain.crt;
-    ssl_certificate_key /etc/nginx/private/your_domain.key;
-
-    root /var/www/vitepress/dist;
-
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ /index.html;
-    }
-}
-```
-
-- Nginx最好关闭默认配置 使用.conf文件配置
-<!--@include: config.conf-->
+<!--@include: server_cfg.md{1,40}-->
