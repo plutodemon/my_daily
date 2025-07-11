@@ -72,6 +72,26 @@ nginx -T
 
 可以使用 [Certbot](https://certbot.eff.org/) 工具自动化申请和配置SSL证书。[Let's Encrypt](https://letsencrypt.org/) 免费证书。
 
+- 安装Certbot
+
+```bash
+sudo snap install core
+```
+
+```bash
+sudo snap refresh core
+```
+
+```bash
+sudo snap install --classic certbot
+```
+
+这一步是为了确保 certbot 命令能全局使用
+
+```bash
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+
 ### 手动配置(Nginx)
 
 1. 申请SSL证书
