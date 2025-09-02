@@ -26,6 +26,14 @@ outline: deep
   ```bash
   docker images
   ```
+- 删除Docker容器
+  ```bash
+  docker rm <container_id>
+  ```
+- 删除Docker镜像
+  ```bash
+    docker rmi <image_id>
+  ```
 - 查看Docker网络列表
   ```bash
   docker network ls

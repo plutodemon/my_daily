@@ -13,6 +13,9 @@ hero:
       text: Soft Install
       link: /softInstall
     - theme: alt
+      text: Travel
+      link: /travel
+    - theme: alt
       text: Examples
       link: /examples/markdown-examples
 

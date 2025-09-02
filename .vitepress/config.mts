@@ -77,6 +77,15 @@ export default defineConfig({
                 }
             ],
 
+            '/travel/': [
+                {
+                    text: 'Travel',
+                    items: [
+                        {text: '千岛湖', link: '/travel/千岛湖.md'},
+                    ]
+                }
+            ],
+
             '/examples/': [
                 {
                     text: 'Examples',
