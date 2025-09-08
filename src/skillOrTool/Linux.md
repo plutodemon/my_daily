@@ -42,3 +42,58 @@ cat >> ~/.ssh/authorized_keys
 ```bash
 cat id_rsa_github.pub >> authorized_keys
 ```
+
+## 配置开机启动
+
+编写 `startup.sh` 脚本
+
+```bash
+#!/bin/bash
+# 启动脚本内容
+docker start rustdesk-hbbs rustdesk-hbbr
+```
+
+赋予执行权限
+
+```bash
+chmod +x startup.sh
+```
+
+写一个 systemd 服务文件 `my_startup.service`
+
+```ini
+[Unit]
+Description=Startup Containers
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/startup.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+```
+
+启用服务
+
+```bash
+sudo systemctl daemon-reload
+```
+
+```bash
+sudo systemctl enable my_startup.service
+```
+
+查看日志
+
+```bash
+systemctl status lemon_restart.service -l
+```
+
+查看详细日志
+
+```bash
+journalctl -xeu lemon_restart.service
+```
