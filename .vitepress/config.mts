@@ -95,6 +95,12 @@ export default defineConfig({
                     ]
                 }
             ],
+
+            '/.well-known/pki-validation/': [
+                {
+                    link: '/.well-known/pki-validation/B245406FC376ED3B152D69CAA2BE21F7.txt'
+                }
+            ],
         }
     }
 })
