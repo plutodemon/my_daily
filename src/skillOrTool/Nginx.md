@@ -62,7 +62,7 @@ nginx -T
 
 ## 配置
 
-修改默认配置 `/etc/nginx/sites-available/default` 文件
+修改默认配置 `/etc/nginx/sites-available/default` 文件 或 `/etc/nginx/conf.d/your_domain.conf`
 
 <!--@include: server_cfg.md{41,}-->
 
@@ -94,8 +94,15 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 ### 手动配置(Nginx)
 
-1. 申请SSL证书
+1. 申请SSL证书 可以使用 [ZeroSSL](https://app.zerossl.com/certificate/new) 或其他CA机构申请免费证书
+    - 验证域名所有权:将验证文件放到 `/var/www/pki-validation/` 下, nginx添加配置
+    ```nginx
+    location ^~ /.well-known/pki-validation/ {
+        alias /var/www/pki-validation/;
+        allow all;
+    }
+    ```
 2. 将证书文件放在服务器上，例如 `/etc/nginx/certs/your_domain.crt` 和 `/etc/nginx/private/your_domain.key`
-3. 修改Nginx配置文件 `/etc/nginx/sites-available/default`
+3. 修改Nginx配置文件 `/etc/nginx/sites-available/default` 或 `/etc/nginx/conf.d/your_domain.conf`
 
 <!--@include: server_cfg.md{1,40}-->
