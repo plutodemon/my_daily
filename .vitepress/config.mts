@@ -81,6 +81,7 @@ export default defineConfig({
                 {
                     text: 'Travel',
                     items: [
+                        {text: '南京', link: '/travel/南京.md'},
                         {text: '千岛湖', link: '/travel/千岛湖.md'},
                     ]
                 }
