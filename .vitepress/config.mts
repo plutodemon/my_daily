@@ -66,6 +66,7 @@ export default defineConfig({
                     items: [
                         {text: 'skill', link: '/skillOrTool/'},
                         {text: 'Linux', link: '/skillOrTool/Linux'},
+                        {text: 'Windows', link: '/skillOrTool/Windows'},
                         {text: 'Git', link: '/skillOrTool/Git'},
                         {text: 'Rpc', link: '/skillOrTool/Rpc'},
                         {text: 'Flutter', link: '/skillOrTool/Flutter'},
