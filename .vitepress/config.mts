@@ -45,45 +45,120 @@ export default defineConfig({
 
         nav: [
             {text: 'Home', link: '/'},
+            {text: 'Docker', link: '/Docker/'},
+            {text: 'Flutter', link: '/Flutter/'},
+            {text: 'Golang', link: '/Golang/'},
+            {text: 'Nginx', link: '/Nginx/'},
+            {text: 'Node', link: '/Node/'},
+            {text: 'OS', link: '/OS/OS_Linux/Linux.md'},
+            {text: 'Python', link: '/Python/'},
+            {text: 'Software', link: '/Software/Git.md'},
+            {text: 'Travel', link: '/Travel/'},
         ],
 
         sidebar: {
-            '/softInstall/': [
+            '/Docker/': [
                 {
-                    text: 'Install',
+                    text: 'Docker',
                     items: [
-                        {text: 'Windows 配置', link: '/softInstall/'},
-                        {text: 'Golang', link: '/softInstall/Golang'},
-                        {text: 'Python', link: '/softInstall/Python'},
-                        {text: 'Node.js', link: '/softInstall/Node'},
+                        {text: '安装配置', link: '/Docker/index.md'},
+                        {text: '常用命令', link: '/Docker/Command.md'},
                     ]
                 }
             ],
 
-            '/skillOrTool/': [
+            '/Flutter/': [
                 {
-                    text: 'Skill Tool',
+                    text: 'Flutter',
                     items: [
-                        {text: 'skill', link: '/skillOrTool/'},
-                        {text: 'Linux', link: '/skillOrTool/Linux'},
-                        {text: 'Windows', link: '/skillOrTool/Windows'},
-                        {text: 'Git', link: '/skillOrTool/Git'},
-                        {text: 'Rpc', link: '/skillOrTool/Rpc'},
-                        {text: 'Flutter', link: '/skillOrTool/Flutter'},
-                        {text: 'Nginx', link: '/skillOrTool/Nginx'},
-                        {text: 'Docker', link: '/skillOrTool/Docker'},
-                        {text: 'VitePress', link: '/skillOrTool/VitePress'},
-                        {text: 'RustDesk', link: '/skillOrTool/RustDesk'},
+                        {text: 'Flutter', link: '/Flutter/index.md'},
                     ]
                 }
             ],
 
-            '/travel/': [
+            '/Golang/': [
+                {
+                    text: 'Golang',
+                    items: [
+                        {text: '安装配置', link: '/Golang/index.md'},
+                        {text: 'Rpc', link: '/Golang/Rpc.md'},
+                    ]
+                }
+            ],
+
+            '/Nginx/': [
+                {
+                    text: 'Nginx',
+                    items: [
+                        {text: '安装配置', link: '/Nginx/index.md'},
+                        {text: '常用命令', link: '/Nginx/Command.md'},
+                    ]
+                }
+            ],
+
+            '/Node/': [
+                {
+                    text: 'Node',
+                    items: [
+                        {text: 'Node', link: '/Node/index.md'},
+                    ]
+                }
+            ],
+
+            '/OS/': [
+                {
+                    text: 'OS',
+                    items: [
+                        {
+                            text: 'Linux',
+                            items: [
+                                {text: '常用操作', link: '/OS/OS_Linux/Linux.md'},
+                            ]
+                        },
+                        {
+                            text: 'Mac',
+                            items: [
+                                {text: 'Mac', link: '/OS/OS_Mac/Mac.md'},
+                            ]
+                        },
+                        {
+                            text: 'Windows',
+                            items: [
+                                {text: '配置', link: '/OS/OS_Windows/index.md'},
+                                {text: '常用操作', link: '/OS/OS_Windows/Windows.md'},
+                            ]
+                        },
+                    ],
+                }
+            ],
+
+            '/Python/': [
+                {
+                    text: 'Python',
+                    items: [
+                        {text: '安装配置', link: '/Python/index.md'},
+                    ]
+                }
+            ],
+
+            '/Software/': [
+                {
+                    text: 'Software',
+                    items: [
+                        {text: 'Git', link: '/Software/Git.md'},
+                        {text: 'RustDesk', link: '/Software/RustDesk.md'},
+                        {text: 'VitePress', link: '/Software/VitePress.md'},
+                    ]
+                }
+            ],
+
+            '/Travel/': [
                 {
                     text: 'Travel',
                     items: [
-                        {text: '南京', link: '/travel/南京.md'},
-                        {text: '千岛湖', link: '/travel/千岛湖.md'},
+                        {text: '必备物品', link: '/Travel/index.md'},
+                        {text: '南京', link: '/Travel/南京.md'},
+                        {text: '千岛湖', link: '/Travel/千岛湖.md'},
                     ]
                 }
             ],

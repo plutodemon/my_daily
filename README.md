@@ -18,5 +18,5 @@
     - 一些想法 目前只构思了一小部分游戏
 - [skillOrTool.md](src/skillOrTool/index.md)
     - 一些技巧或者工具的使用
-- [softInstall.md](src/softInstall/index.md)
+- [softInstall.md](src/OS/OS_Windows/index.md)
     - 软件 环境配置

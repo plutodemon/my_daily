@@ -9,7 +9,7 @@ outline: deep
 ## 环境准备
 
 1. 安装 Node.js 和 npm
-    - windows 见 [安装node.md](../softInstall/Node.md#windows)
+    - windows 见 [安装node.md](../Node/Node.md#windows)
     - linux/macOS: [安装nvm](https://nodejs.org/zh-cn/download)
 2. 安装 VitePress
     - 创建 git 仓库

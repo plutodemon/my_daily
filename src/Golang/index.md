@@ -2,11 +2,11 @@
 outline: deep
 ---
 
-# Golang
+# [Golang](https://go.dev/ "Go官方")
 
 官网下载解压到某个自定义文件夹中后 配置环境变量等
 
-## 配置
+## 安装后配置
 
 - 现在go的版本通过go mod管理依赖 所以不需要再配置GOPATH了  
   但是一些老的项目 或者go install的时候不配置会下载到系统盘 所以还是配置一下吧

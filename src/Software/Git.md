@@ -46,7 +46,7 @@ outline: deep
 
 ## 配置公钥
 
-- 生成公钥私钥见 [Linux.md 生成公钥私钥](Linux.md#生成公钥私钥)
+- 生成公钥私钥见 [Linux.md 生成公钥私钥](../OS/OS_Linux/Linux.md#生成公钥私钥)
   随后将公钥添加到github上
   ![添加公钥](../img/github_add_ssh.png)
 - 随后在需要用git的添加私钥配置
