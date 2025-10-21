@@ -52,7 +52,7 @@ outline: deep
   ```
 - ### 测试
   ```bash
-  sudo docker run hello-world
+  sudo docker -v
   ```
 
 ## [换源](https://blog.csdn.net/Lichen0196/article/details/137355517)

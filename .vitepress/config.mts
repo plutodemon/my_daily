@@ -46,12 +46,12 @@ export default defineConfig({
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Docker', link: '/Docker/'},
-            {text: 'Flutter', link: '/Flutter/'},
             {text: 'Golang', link: '/Golang/'},
+            {text: 'Python', link: '/Python/'},
             {text: 'Nginx', link: '/Nginx/'},
             {text: 'Node', link: '/Node/'},
+            {text: 'Flutter', link: '/Flutter/'},
             {text: 'OS', link: '/OS/OS_Linux/Linux.md'},
-            {text: 'Python', link: '/Python/'},
             {text: 'Software', link: '/Software/Git.md'},
             {text: 'Travel', link: '/Travel/'},
         ],
@@ -63,6 +63,7 @@ export default defineConfig({
                     items: [
                         {text: '安装配置', link: '/Docker/index.md'},
                         {text: '常用命令', link: '/Docker/Command.md'},
+                        {text: '常用操作', link: '/Docker/Operation.md'},
                     ]
                 }
             ],

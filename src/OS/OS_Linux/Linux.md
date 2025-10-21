@@ -97,3 +97,5 @@ systemctl status lemon_restart.service -l
 ```bash
 journalctl -xeu lemon_restart.service
 ```
+
+rg命令(代替grep)
