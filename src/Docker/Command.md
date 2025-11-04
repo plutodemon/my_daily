@@ -53,7 +53,15 @@ outline: deep
   ```
     - `-f`：实时查看日志输出
     - `--tail N`：显示最后N行日志
-    - `container_id`可用容器名称代替
+    - `container_id`：可用容器名称代替
+- #### 拉取Docker镜像
+  ```bash
+  docker pull <image_name>:<tag>
+  ```
+- #### 搜索Docker镜像
+  ```bash
+  docker search <image_name>
+  ```
 
 ### 容器操作
 
