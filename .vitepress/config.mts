@@ -149,6 +149,7 @@ export default defineConfig({
                         {text: 'Git', link: '/Software/Git.md'},
                         {text: 'RustDesk', link: '/Software/RustDesk.md'},
                         {text: 'VitePress', link: '/Software/VitePress.md'},
+                        {text: 'VsCode', link: '/Software/VsCode.md'},
                     ]
                 }
             ],
@@ -160,6 +161,7 @@ export default defineConfig({
                         {text: '必备物品', link: '/Travel/index.md'},
                         {text: '南京', link: '/Travel/南京.md'},
                         {text: '千岛湖', link: '/Travel/千岛湖.md'},
+                        {text: '天津', link: '/Travel/天津.md'},
                     ]
                 }
             ],
