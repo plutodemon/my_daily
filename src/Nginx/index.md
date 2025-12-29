@@ -14,7 +14,7 @@ sudo apt install -y nginx
 
 修改默认配置 `/etc/nginx/sites-available/default` 文件 或 `/etc/nginx/conf.d/your_domain.conf`
 
-<!--@include: server_cfg.md{41,}-->
+<!--@include: server_cfg.md{47,}-->
 
 ## 配置SSL
 
@@ -55,4 +55,4 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 2. 将证书文件放在服务器上，例如 `/etc/nginx/certs/your_domain.crt` 和 `/etc/nginx/private/your_domain.key`
 3. 修改Nginx配置文件 `/etc/nginx/sites-available/default` 或 `/etc/nginx/conf.d/your_domain.conf`
 
-<!--@include: server_cfg.md{1,40}-->
+<!--@include: server_cfg.md{1,46}-->
